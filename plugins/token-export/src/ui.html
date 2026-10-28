@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./ui.css">
+  </head>
+  <body>
+    <h2>Chopstick Token Export</h2>
+    <p>Select the collections and styles to include in your export.</p>
+
+    <div id="loading">Loading...</div>
+
+    <div id="panels" class="hidden">
+      <!-- Variable Collections -->
+      <section class="panel">
+        <h3>Variable collections</h3>
+        <div class="toggle-actions">
+          <button class="toggle-btn" data-target="collection-list" data-action="select">Select all</button>
+          <button class="toggle-btn" data-target="collection-list" data-action="deselect">Deselect all</button>
+        </div>
+        <div id="collection-list" class="checkbox-list"></div>
+      </section>
+
+      <!-- Style Types -->
+      <section id="styles-panel" class="panel hidden">
+        <h3>Styles</h3>
+        <div class="toggle-actions">
+          <button class="toggle-btn" data-target="styles-list" data-action="select">Select all</button>
+          <button class="toggle-btn" data-target="styles-list" data-action="deselect">Deselect all</button>
+        </div>
+        <div id="styles-list" class="checkbox-list"></div>
+      </section>
+    </div>
+
+    <div id="empty-state" class="hidden">No variable collections or styles found in this file.</div>
+
+    <button id="exportBtn" disabled>Export tokens</button>
+    <div id="status"></div>
+
+    <script type="module" src="./ui.ts"></script>
+  </body>
+</html>

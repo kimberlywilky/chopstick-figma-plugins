@@ -1,0 +1,49 @@
+/**
+ * Chopstick Figma Plugins - Base Styles
+ *
+ * Shared reset, typography, and foundational styles used across all plugins.
+ * Import this file first in each plugin's ui.css.
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  background: #fff;
+  color: #333;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}

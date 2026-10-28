@@ -1,0 +1,47 @@
+@import '../../../packages/shared/css/base.css';
+@import '../../../packages/shared/css/components.css';
+
+/* ─── Panels Container ──────────────────────────────────────────────────── */
+
+#panels {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* ─── Panel (shared between collections and styles) ─────────────────────── */
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+#panels > .panel:first-child {
+  flex: 1;
+}
+
+#styles-panel {
+  flex-shrink: 0;
+}
+
+/* ─── Token-export specific toggle actions ──────────────────────────────── */
+
+.toggle-actions {
+  margin-bottom: 6px;
+  gap: 8px;
+}
+
+.toggle-actions button {
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+/* ─── Collection list ───────────────────────────────────────────────────── */
+
+#collection-list {
+  flex: 1;
+}

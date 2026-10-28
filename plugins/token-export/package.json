@@ -1,0 +1,17 @@
+{
+  "name": "chopstick-token-export",
+  "version": "0.1.0",
+  "description": "Figma plugin to export Chopstick design tokens in Style Dictionary v4 DTCG format",
+  "scripts": {
+    "build": "vite build && vite build --mode ui && mv dist/src/ui.html dist/ui.html && rm -rf dist/src",
+    "dev": "vite build --watch & vite build --mode ui --watch"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "latest",
+    "@types/node": "latest",
+    "jszip": "^3.10.1",
+    "typescript": "latest",
+    "vite": "latest",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}

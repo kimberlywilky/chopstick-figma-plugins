@@ -1,0 +1,157 @@
+/**
+ * Chopstick Figma Plugins - Shared UI Components
+ *
+ * Reusable component styles shared across plugins: loading states,
+ * toggle actions, checkbox lists, export button, and status messages.
+ */
+
+/* ─── Loading / Empty State ─────────────────────────────────────────────── */
+
+#loading {
+  color: #666;
+  padding: 12px 0;
+}
+
+#empty-state {
+  color: #999;
+  padding: 12px 0;
+  line-height: 1.5;
+}
+
+/* ─── Toggle Actions (Select All / Deselect All) ───────────────────────── */
+
+.toggle-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.toggle-actions button {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+}
+
+.toggle-actions button:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
+
+/* ─── Checkbox List ─────────────────────────────────────────────────────── */
+
+.checkbox-list {
+  overflow-y: auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.checkbox-item:hover {
+  background: #f8f8f8;
+}
+
+.checkbox-item + .checkbox-item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: #000;
+}
+
+.checkbox-item span {
+  font-size: 12px;
+  color: #333;
+}
+
+/* ─── Search Bar ────────────────────────────────────────────────────────── */
+
+.search-bar {
+  margin-bottom: 8px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: Inter, sans-serif;
+  color: #333;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+}
+
+.search-bar input:focus {
+  border-color: #999;
+}
+
+/* ─── Export Button ─────────────────────────────────────────────────────── */
+
+#exportBtn {
+  width: 100%;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#exportBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ─── Status ────────────────────────────────────────────────────────────── */
+
+#status {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: none;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+#status.loading {
+  display: block;
+  background: #f5f5f5;
+  color: #666;
+}
+
+#status.success {
+  display: block;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+#status.error {
+  display: block;
+  background: #ffebee;
+  color: #c62828;
+}
