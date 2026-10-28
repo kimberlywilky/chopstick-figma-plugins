@@ -9,6 +9,7 @@ Each plugin lives in its own folder under `plugins/` with its own dependencies, 
 | Plugin | Description |
 |--------|-------------|
 | [token-export](./plugins/token-export/) | Exports Figma variables and text/effect styles as DTCG-compliant JSON, ready for Style Dictionary v4. |
+| [icon-export](./plugins/icon-export/) | Exports Figma icon components, across brand variants, as cleaned, organized SVG files. |
 
 
 ## Shared Package

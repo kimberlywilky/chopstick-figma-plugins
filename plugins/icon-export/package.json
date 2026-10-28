@@ -1,0 +1,17 @@
+{
+  "name": "chopstick-icon-export",
+  "version": "0.1.0",
+  "description": "Figma plugin to export the Chopstick icon library as organized, cleaned SVG files",
+  "scripts": {
+    "build": "vite build && vite build --mode ui && mv dist/src/ui.html dist/ui.html && rm -rf dist/src",
+    "dev": "vite build --watch & vite build --mode ui --watch"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "latest",
+    "@types/node": "latest",
+    "jszip": "^3.10.1",
+    "typescript": "latest",
+    "vite": "^7.0.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
